@@ -38,7 +38,7 @@ $$
 P(\tilde{x} > 12,500) = P(z_{\tilde{x}} > 1.16) = 1 - P(z_{\tilde{x}} \leq 1.16) = 1 - 0.8770 = 0.1230
 $$
 
-     - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
+   - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
 
         **In R**:
         ```r
@@ -65,6 +65,7 @@ rating for the entire customer base is different from 7.2?
 1. This problem requires a two-tailed test. Why?
 2. Unlike in this case, reporting standards require that analysts report variance associated with the mean. 
 3. Regardlyess, we can determine the probability using the following steps:
+   
    - Compute the standard error of the mean:
 
 $$
@@ -79,9 +80,9 @@ $$
 
    - Compute the probability:
   
-      $$
-      P(\tilde{x} > 7.5) = P(z_{\tilde{x}} > 3.49) = 0.0002
-      $$
+$$
+P(\tilde{x} > 7.5) = P(z_{\tilde{x}} > 3.49) = 0.0002
+$$
    
      - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
 
@@ -93,7 +94,7 @@ $$
         ```
 
         **In Python**:
-        
+
         ```python
         import scipy.stats
         scipy.stats.norm.sf(abs(3.49))
