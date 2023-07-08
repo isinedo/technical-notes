@@ -84,19 +84,19 @@ $$
 P(\tilde{x} > 7.5) = P(z_{\tilde{x}} > 3.49) = 0.0002
 $$
    
-     - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
+   - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
 
-        **In R**:
+   **In R**:
 
-        ```r
-        pnorm(3.49, lower.tail=F)
-        # [1] 0.0002415103
-        ```
+     ```r
+     pnorm(3.49, lower.tail=F)
+     # [1] 0.0002415103
+     ```
 
-        **In Python**:
+   **In Python**:
 
-        ```python
-        import scipy.stats
-        scipy.stats.norm.sf(abs(3.49))
-        # 0.00024151027356783604
-        ```
+    ```python
+    import scipy.stats
+    scipy.stats.norm.sf(abs(3.49))
+    # 0.00024151027356783604
+    ```
