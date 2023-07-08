@@ -1,4 +1,16 @@
 # Central Limit Theorem
+A few things to note about the central limit theorem:
+
+1. For large samples, the normal distribution gives a good approximation to the distribution of many interesting sample statistics, such as means or variances, which are proportional to the sum of independent and equally distributed terms.
+
+2. Suppose that $X_1$, $X_2$,..., $X_n$,... is a sequence of independent equally disributed variables, with a finite mean and variance, $\mu$ and $\sigma^2$, and denoted by $\tilde{X}_n$. The mean is:
+
+$$
+\tilde{X}_n = {{X_1 + ... + X_n} \over n}
+$$
+
+   According to the central limit theorem, the cummulative density function (CDF) of $\tilde{X}_n$ converges to the standard normal $\Phi$ as $n$ $\to$ $\infty$. This means that in practice, we can use the normal distribution as an approximation to calculate probabilities related to $\tilde{X}_n$.
+
 ## Putting the Central Limit Theorem to Work
 ### Hypothesis testing: Example 1
 Suppose people drive an average of 12,000 miles per year with a standard deviation of 2,580 miles per year.
@@ -26,19 +38,22 @@ $$
 
 6. Next, we'll compute the desired probability in the following steps:
 
-   - Convert $\tilde{x}$ to a $z$-score:
+   - Compute the $z$-score:
 
 $$
 z_{\tilde{x}} = {{\tilde{x} - \mu_{\tilde{x}}} \over \sigma_{\tilde{x}}} = {{12,500 - 12,000} \over 430} = 1.16
 $$
 
-   - Determine the desired probability:
+- To determine the desired probability, compute the $p$-value associated with $z = 1.16$. As computed below, this $p$-value is approximately 0.8770. As shown in the diagram above, this is the sum of all probability values up to the $z = 1.16$. 
+- We are interested in the probability that the sample of drivers will drive on average, **more than** 12,500 miles. 
+- The sum of all probabilities in the distribution must equal 1.
+- To find the probability of interest, we'll therefore subtract $p = 0.8770 from 1$. The result is $1- 0.8770 = 0.1230$:
 
 $$
 P(\tilde{x} > 12,500) = P(z_{\tilde{x}} > 1.16) = 1 - P(z_{\tilde{x}} \leq 1.16) = 1 - 0.8770 = 0.1230
 $$
 
-   - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
+   - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`. The argument `lower.tail = T`, indicates that the function call `pnorm()` computes the lower tail of the distribution. As explained above, this value is subtracted from 1 to arrive at the probability of interest.
 
       **In R**:
       ```r
@@ -59,12 +74,14 @@ $$
 A company has 100 customers. Each customer rated the company on customer service on a scale of 1-10. The average rating was 7.2 with a standard deviation of 0.7. A recent sample of 40 customers showed that the average customer service rating was 7.5.
 
 What is the probability that the average customer service
-rating for the entire customer base is different from 7.2?
+rating for the entire customer base is **different from 7.2**?
 
 **Note**:
-1. This problem requires a two-tailed test. Why?
-2. Unlike in this case, reporting standards require that analysts report variance associated with the mean. 
-3. Regardlyess, we can determine the probability using the following steps:
+1. This problem requires a two-tailed test. Why? To compute the probability that rating is different from 7.2, we must assume that the mean rating could be either greater than or less than 7.2. Based on this assumption, the true mean rating could fall on either tail of the normal distribution. Therefore, the problem requires a two-tailed test.
+2. A second issue is that $n=40$ is considered a large sample. Therefore, --insert authors-- approach to adopt the finite population correction factor should not have been applied to test this hypothesis.
+3. Our approach will adopt the ---insert approach-- the Studen't $t$ distribution, 
+4. Unlike in this case, reporting standards require that analysts report variance associated with the mean. 
+5. Regardless, we can determine the probability using the following steps:
    
    - Compute the standard error of the mean:
 
