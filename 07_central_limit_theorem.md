@@ -40,18 +40,18 @@ $$
 
    - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
 
-        **In R**:
-        ```r
-        1 - pnorm(1.16, lower.tail=T)
-        # [1] 0.1230244
-        ```
+      **In R**:
+      ```r
+      1 - pnorm(1.16, lower.tail=T)
+      # [1] 0.1230244
+      ```
 
-        **In Python**:
-        ```python
-        import scipy.stats
-        scipy.stats.norm.sf(abs(1.16))
-        # 0.12302440305134343
-        ```
+      **In Python**:
+      ```python
+      import scipy.stats
+      scipy.stats.norm.sf(abs(1.16))
+      # 0.12302440305134343
+      ```
 
 **Conclusion**: The probability that a randomly selected sample of 36 drivers will drive more than 12,500 miles on average is 0.123 or 12.3%.
 
