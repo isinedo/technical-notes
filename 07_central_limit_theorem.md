@@ -66,16 +66,19 @@ rating for the entire customer base is different from 7.2?
 2. Unlike in this case, reporting standards require that analysts report variance associated with the mean. 
 3. Regardlyess, we can determine the probability using the following steps:
    - Compute the standard error of the mean:
+
 $$
 \sigma_{\tilde{x}} =  { \sigma \over \sqrt{n}} \sqrt{{N - n \over N - 1}} = {0.7 \over \sqrt{40}} \sqrt{{100 - 40 \over 100 - 1}} = (0.111)(0.778) = 0.086.
 $$   
    
    - Compute the $z$-score associated with the mean ($\tilde{x}$) and the standard error of the mean ($se$).
+
 $$
 z_{\tilde{x}} = {{\tilde{x} - \mu_{\tilde{x}}} \over {\sigma_{\tilde{x}}}} = {{7.5 - 7.2} \over {0.086}} = 3.49
 $$
 
-   - Compute the probability.
+   - Compute the probability:
+  
       $$
       P(\tilde{x} > 7.5) = P(z_{\tilde{x}} > 3.49) = 0.0002
       $$
@@ -83,12 +86,14 @@ $$
      - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
 
         **In R**:
+
         ```r
         pnorm(3.49, lower.tail=F)
         # [1] 0.0002415103
         ```
 
         **In Python**:
+        
         ```python
         import scipy.stats
         scipy.stats.norm.sf(abs(3.49))
