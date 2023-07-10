@@ -30,7 +30,7 @@ $$
     ![Distribution for a sample of 36 drivers](./images/Screenshot%202023-07-06%20at%2023-25-37%20Chapter%207%20-%20dbs3e_ppt_ch07.pdf.png)
 
 
-5. Recall that we can compute the **sample** standard deviation:
+5. Recall that we can compute the **sample** standard error:
 
 $$
 \sigma_{\tilde{x}} ={ \sigma \over \sqrt{n}} ={ 2,580 \over \sqrt{36}} = 430.
@@ -71,17 +71,26 @@ $$
 **Conclusion**: The probability that a randomly selected sample of 36 drivers will drive more than 12,500 miles on average is 0.123 or 12.3%.
 
 ### Hypothesis testing: Example 2
-A company has 100 customers. Each customer rated the company on customer service on a scale of 1-10. The average rating was 7.2 with a standard deviation of 0.7. A recent sample of 40 customers showed that the average customer service rating was 7.5.
+This example illustrates when to use the **finite population correction factor** (FPC). Typically, we use the general standard error calculation when we are trying to make statistical inference for a sample that is less than 5% of the population. In such scenarios, the population is referred to as an **approximately infinite population**.
 
-What is the probability that the average customer service
-rating for the entire customer base is **different from 7.2**?
+$$
+\sigma_{\tilde{x}} = {\sigma \over \sqrt{n}}
+$$
+
+However, in cases where the sample size exceeds this 5% requirement, we apply a correction factor to the general standard error formula. This is what referred to as a finite population correction factor.
+
+$$
+FPC = {\sigma \over \sqrt{n}} \sqrt{{N - n \over N - 1}}
+$$
+
+A company has 100 customers. Each customer rated the company on customer service on a scale of 1-10. The average rating was 7.2 with a standard deviation of 0.7. A recent sample of 40 customers showed that the average customer service rating was 7.5. What is the probability that the average customer service rating for the entire customer base is **different from 7.2**?
 
 **Note**:
-1. This problem requires a two-tailed test. Why? To compute the probability that rating is different from 7.2, we must assume that the mean rating could be either greater than or less than 7.2. Based on this assumption, the true mean rating could fall on either tail of the normal distribution. Therefore, the problem requires a two-tailed test.
-2. A second issue is that $n=40$ is considered a large sample. Therefore, --insert authors-- approach to adopt the finite population correction factor should not have been applied to test this hypothesis.
-3. Our approach will adopt the ---insert approach-- the Studen't $t$ distribution, 
-4. Unlike in this case, reporting standards require that analysts report variance associated with the mean. 
-5. Regardless, we can determine the probability using the following steps:
+1. This problem requires a two-tailed test. Why? To compute the probability that rating is different from 7.2, we must assume that the mean rating could be either greater than or less than 7.2. Based on this assumption, the true mean rating could fall on either tail of the normal distribution.
+   
+2. We want to test the null hypothesis that the probability average rating is $7.2$.
+
+3. We can determine the probability using the following steps:
    
    - Compute the standard error of the mean:
 
@@ -101,6 +110,8 @@ $$
 P(\tilde{x} > 7.5) = P(z_{\tilde{x}} > 3.49) = 0.0002
 $$
    
+   - As stated above, since we assume the probability could fall on either tail of the distribution, we multiply the value we obtained above by 2: $0.0002 \times 2 = 0.0004$ or $0.4\%$. Since the probability value is far less than $0.05$, we reject the null hypothesis. Therefore, we can conclude that the average customer service rating is most likely different from 7.2 is $0.004$.
+
    - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
 
    **In R**:
@@ -117,3 +128,42 @@ $$
     scipy.stats.norm.sf(abs(3.49))
     # 0.00024151027356783604
     ```
+
+### Hypothesis testing: Example 3
+A College claims that 70% of its 770 graduates have landed full-time jobs in fields related to their majors. To test this claim, 120 students are randomly surveyed, and 97 had found jobs in fields related to their majors. Is the college's claim accurate?
+
+**Null hypothesis**: Seventy percent of the college's graduates landed full-time jobs in fields related to their majors.
+
+This example requires knowledge on how to deal with binary dependent variables. In practice the application is very similar to Example 2 above.
+
+**Steps**:
+1. Find the standard error of the proportion. 
+
+$$
+\sigma_p = {\sqrt{p(1 - p) \over n}} {\sqrt{N - n \over N - 1}} = \sqrt{0.70(1-0.70) \over 120} \sqrt{770-120 \over 770-1} = 0.0384.
+$$
+
+2. Calculate the $z$-score for $\tilde{p}$ = $\frac{97}{120} = 0.808$
+
+$$
+z_p = {\tilde{p} - p \over \sigma_p} = {0.808 - 0.70 \over 0.0384} = 2.81
+$$
+
+3. Determine the probability that a sample proportion of $\tilde{p} = 0.808$ or more could be obtained if the true proportion is $p = 0.70$.
+
+$$
+P(\tilde{p} \ge 0.808) = P(z_p \ge 2.81) = 0.0025 \hspace{1mm} or \hspace{1mm} 0.25\%
+$$
+
+**In R**:
+```r
+> 1 - pnorm(2.81, lower.tail=T)
+# [1] 0.002477075
+```
+
+**In Python**:
+ ```python
+ import scipy.stats
+ scipy.stats.norm.sf(abs(2.81))
+ # 0.002477074998785861
+ ```
