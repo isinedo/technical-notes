@@ -33,7 +33,7 @@ $$
 ![Compute the critical sample mean](./images/Screenshot%202023-07-12%20at%2001-16-28%20Chapter%209%20-%20dbs3e_ppt_ch09.pdf.png)
 
 $$
-\bar{x} = \mu_{H_0} \plusmn (z_\alpha) {\left (\sigma \over \sqrt{n} \right)}
+\bar{x} = \mu_{H_0} {\plusmn} (z_\alpha) {\left (\sigma \over \sqrt{n} \right)}
 $$
 
 $$
