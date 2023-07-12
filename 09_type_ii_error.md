@@ -1,7 +1,7 @@
 # Calculating the Probability of Type II Error
 See this excerpt from Kirk (2013) on Type I and Type II error.
 
-    When the null hypothesis is tested, a researcher's decision will be either correct or incorrect. An incorrect decision can be made in two ways. The researcher can reject the null hypothesis when it is true; this is called Type I error. Alternatively, the researcher can fail to reject the null hypothesis when it is false; this is called Type II error. Likewise, a correct decision can be made in two ways. If the null hypothesis is true and the researcher does not reject it, a correct acceptance has been made; if the null hypothesis is false and the researcher rejects it, a correct decision has been made.
+>> When the null hypothesis is tested, a researcher's decision will be either correct or incorrect. An incorrect decision can be made in two ways. The researcher can reject the null hypothesis when it is true; this is called Type I error. Alternatively, the researcher can fail to reject the null hypothesis when it is false; this is called Type II error. Likewise, a correct decision can be made in two ways. If the null hypothesis is true and the researcher does not reject it, a correct acceptance has been made; if the null hypothesis is false and the researcher rejects it, a correct decision has been made.
 
 In case it is ever useful, someone once posted this visual on social media as a way to distinguish between Type I and Type II error.
 ![Type I and Type II error](./images/type_i_typeii.jpg)
