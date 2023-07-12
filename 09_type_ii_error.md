@@ -29,6 +29,7 @@ H_1: \mu > 50.
 $$
 
 2. Compute the critical sample mean, $\bar{x}_\alpha$. The critical sample mean, $\bar{x}_\alpha$ is the sample mean that marks the boundary of the rejection region. For an illustration, see below.
+
 ![Compute the critical sample mean](./images/Screenshot%202023-07-12%20at%2001-16-28%20Chapter%209%20-%20dbs3e_ppt_ch09.pdf.png)
 
 $$
@@ -39,7 +40,7 @@ $$
 \bar{x} = 50 + (1.645) \left(6 \over \sqrt{64} \right) = 51.23
 $$
 
-3. Find the $z$ value for 51.23, assuming $\mu = 52$. 
+3. Find the $z$ value for $51.23$, assuming $\mu = 52$. 
 
 $$
 z = {51.23 - 52 \over 6} = -1.03
