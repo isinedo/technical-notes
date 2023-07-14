@@ -8,7 +8,7 @@ improving.
 However, As it turns out, based on their sample of the workforce, the government was 90% confident that the actual U.S. unemployment rate in March 2018 was between $3.95\%$ and $4.25$\%.
 
 $$
-Confidence \hspace{1mm} interval \hspace{1mm} (CI) = \bar{x} \plusmn z_{\frac{\alpha}{2}} \sigma_{\bar{x}}
+Confidence \hspace{1mm} interval \hspace{1mm} (CI) = \bar{x} \pm z_{\frac{\alpha}{2}} \sigma_{\bar{x}}
 $$
 
 In R, you can compute the $z$-score for any given confidence level. To do so, first you need to divide the $z$-score by 2, to account for the right and left tails of the normal distribution.
