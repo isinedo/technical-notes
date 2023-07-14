@@ -5,10 +5,10 @@ $$
 \sigma_{\bar{x_1} - \bar{x_2}} = \sqrt{{\sigma_{1}^2 \over n_1} + {\sigma_{2}^2 \over n_2}}
 $$
 
-where: <br>
-$\sigma_{1}$ and $\sigma_{2}$ = The standard deviations for 
-populations 1 and 2 respectively. <br>
-$n_{1}$ and $n_{2}$ = The sample sizes from populations 1 and 2 respectively.
+where:
+- $\sigma_{1}$ and $\sigma_{2}$ = The standard deviations for 
+populations 1 and 2 respectively.
+- $n_{1}$ and $n_{2}$ = The sample sizes from populations 1 and 2 respectively.
 
 ## Difference between independent and dependent samples
 Many sources describe independent samples as situations where the subjects or participants in one sample cannot be paired meaningfully with the subjects or participants in another sample. More intuitively, we can think of independent samples using scientific experimental contexts.
@@ -70,7 +70,7 @@ $$
 \sigma_{\bar{x_1} - \bar{x_2}} = \sqrt{{\sigma_{1}^2 \over n_1} + {\sigma_{2}^2 \over n_2}} = \sqrt{{\$1.80^2 \over 40} + {\$2.50^2 \over 36}} = \$0.505
 $$
 
-1. Compute the test statistic: $z$ statistic.
+5. Compute the test statistic: $z$ statistic.
 
 $$
 z_{\bar{x}} = {(\bar{x_1} - \bar{x_2}) - (\mu{x_1} - \mu{x_2})_{H_0} \over \sigma_{\bar{x_1} - \bar{x_2}}} = {(\$13.60 - \$14.75) - (0)_{H_0} \over \$0.505} = 2.28
@@ -78,7 +78,7 @@ $$
 
 6. Compare the $z$ statistic with the critical value for a two-tailed test ($z_{a/2}$).
 
-Since $2.28$ is $>$ $1.96$, we can reject the null hypothesis $H_0$.
+    Since $2.28$ is $>$ $1.96$, we can reject the null hypothesis $H_0$.
 
 7. **Conclusion**: Based on these samples, there is evidence to indicate that on average, fans in New York spend more on food than fans in Chicago.
 
