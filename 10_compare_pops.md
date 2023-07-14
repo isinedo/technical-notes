@@ -67,14 +67,10 @@ As stated earlier, the confidence level is $95\%$, which corresponds with an alp
 4. Compute the standard error.
 
 $$
-\sigma_{\bar{x_1} - \bar{x_2}} = 
-$$
-
-$$
 \sigma_{\bar{x_1} - \bar{x_2}} = \sqrt{{\sigma_{1}^2 \over n_1} + {\sigma_{2}^2 \over n_2}} = \sqrt{{\$1.80^2 \over 40} + {\$2.50^2 \over 36}} = \$0.505
 $$
 
-5. Compute the test statistic: $z$ statistic.
+1. Compute the test statistic: $z$ statistic.
 
 $$
 z_{\bar{x}} = {(\bar{x_1} - \bar{x_2}) - (\mu{x_1} - \mu{x_2})_{H_0} \over \sigma_{\bar{x_1} - \bar{x_2}}} = {(\$13.60 - \$14.75) - (0)_{H_0} \over \$0.505} = 2.28
