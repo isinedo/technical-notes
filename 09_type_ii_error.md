@@ -28,7 +28,7 @@ $$
 H_1: \mu > 50.
 $$
 
-2. Compute the critical sample mean, $\bar{x}_{\alpha}$. The critical sample mean, $\bar{x}_{\alpha}$ is the sample mean that marks the boundary of the rejection region. For an illustration, see below.
+2. Compute the critical sample mean, $`\bar{x}_{\alpha}`$. The critical sample mean, $\bar{x}_{\alpha}$ is the sample mean that marks the boundary of the rejection region. For an illustration, see below.
 
 $$\bar{x}_{\alpha}$$
 
