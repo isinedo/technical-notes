@@ -55,4 +55,4 @@ $$
 n = {(z_{\alpha \over 2})^2 \bar{p}(1 - \bar{p}) \over (ME_{p})^2}
 $$
 
-However, in practice, population parameters are unknown. To solve this problem, statisticians have argued that sample sizes can be determined using a combination of estimates from past studies and statistical simulations. Statistical simulations is left out of this technical note for now. 
+However, in practice, population parameters are unknown. To solve this problem, statisticians have argued that sample sizes can be determined using a combination of estimates from past studies and statistical simulations. Statistical simulations are left out of this technical note. 
