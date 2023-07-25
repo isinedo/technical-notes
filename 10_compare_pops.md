@@ -25,7 +25,7 @@ Is there a difference between the amount a fan spends on food at a baseball game
 
 **Quiz**: Is the scenario above a good or bad example of independent samples? Give reason(s) for your answer.
 
-- A random sample of $40$ Chicago fans had mean spending of $\mu_1$ = $\$13.60$. A sample of $36$ New York fans had mean $\mu_2$ = $\$14.75$.
+- A random sample of $40$ Chicago fans had mean spending of $\mu_1$ = $\$13.60$. A sample of $36$ New York fans had mean $\mu_2$ = $`\$14.75`$.
 - Assume that the population standard deviations are known,
 $\sigma_1$ = $\$1.80$ in Chicago and $\sigma_2$ = $\$2.50$ in New York.
 - Assume we are testing with the $95\%$ confidence level
@@ -81,4 +81,3 @@ $$
     Since $2.28$ is $>$ $1.96$, we can reject the null hypothesis $H_0$.
 
 7. **Conclusion**: Based on these samples, there is evidence to indicate that on average, fans in New York spend more on food than fans in Chicago.
-
