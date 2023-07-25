@@ -37,9 +37,11 @@ The `qnorm()` function will return the $z$-score for any confidence level or for
 ## Student's $t$ distribution
 One version of the history of the Student's *t* distribution goes like this. William Sealy Gosset was an employee of Guineess Brewery in Dublin, Ireland. While he dealing with samples as small as three observations, he developed the Student's *t* distribution as an approximation of the standard normal distribution.
 
-For the Student's $t$, the amount of mass in the tail ends of the distribtion is controlled by a parameter $v$. "For $ν = 1$, the Student's $t$ distribution $t_ν$ becomes the standard Cauchy distribution, whereas for $ν → ∞$, it becomes the standard normal distribution $N (0, 1)$." [Wikipedia: Student's t-distribution](https://en.wikipedia.org/wiki/Student's_t-distribution). In other words, as the sample size approaches infinity, the Student's $t$ becomes the standard normal distribution with a mean of $0$ and a standard deviation of $1$.
+For the Student's $t$, the amount of mass in the tail ends of the distribtion is controlled by a parameter $v$. "For $ν = 1$, the Student's $t$ distribution $t_ν$ becomes the standard Cauchy distribution, whereas for $ν → ∞$, it becomes the standard normal distribution $N (0, 1)$". For reference, see [Wikipedia: Student's t-distribution](https://en.wikipedia.org/wiki/Student's_t-distribution). 
 
-One mistake some analysts make with the Student's *t* distribution is to think that the assumptions of the normal distribution can be applied to small samples.
+In other words, as the sample size approaches infinity, the Student's $t$ becomes the standard normal distribution with a mean of $0$ and a standard deviation of $1$.
+
+Note, one mistake some analysts make with the Student's *t* distribution is to think that the assumptions of the normal distribution can be applied to small samples.
 
 
 ## Calculating the sample size to estimate a population mean
