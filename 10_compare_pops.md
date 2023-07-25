@@ -39,7 +39,7 @@ t_x = {{(\bar{x_1} - \bar{x_2}) - (\mu_1 - \mu_2)_{H_0}} \over {\sqrt{s_{p}^2 \l
 $$
 
 $$
-t_x = \frac{(\bar{x_1} - \bar{x_2}) - (\mu_1 - \mu_2)_{H_0}}{\sqrt{s_{p}^2 \left({1 \over n_1} + {1 \over n_2} \right)}}
+t_x = \frac{(\bar{x_1} - \bar{x_2}) - (\mu_1 - \mu_2)_{H_0}}{\sqrt{s_{p}^2 \left(\frac{1}{n_1} + \frac{1}{n_2} \right)}}
 $$
 
 **Steps**:
