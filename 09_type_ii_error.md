@@ -57,7 +57,7 @@ $$
 ## Calculating statistical power
 From the table above, we can see that the probability of making a correct rejection (right lower quadrant) is power; sometimes referred to as statistical power $(1 - \beta)$.
 
-Therefore, if from the case study above, $\beta = 0.1515$, then power $(1 - \beta) = 1 - 0.1515 = 0.8485$ or $84.85\%$
+Therefore, if from the case study above, $\beta = 0.1515$, then power $(1 - \beta) = 1 - 0.1515 = 0.8485$ or $`84.85\%`$
 
 ## References
 1. [Roger E. Kirk (2013). Experimental Design: Procedures for the Behavioral Sciences, 4th Edition, SAGE Publications, Inc.](https://methods.sagepub.com/book/experimental-design)
