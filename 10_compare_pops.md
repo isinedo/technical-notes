@@ -35,7 +35,7 @@ $\sigma_1$ = $`\$1.80`$ in Chicago and $\sigma_2$ = $`\$2.50`$ in New York.
 2. Donnelly's (2020) approach is to use the $z$ statistic to test the null hypothesis in this case study. Do you think the $t$ statistic would be more appropriate? Give reason(s) for your answer. Below is the formula for the $t$ statistic when comparing two independent means.
 
 $$
-{t_x} = {(\bar{x_1} - \bar{x_2}) - (\mu_1 - \mu_2)_{H_0} \over {\sqrt{s_{p}^2 \left ({1 \over n_1} + {1 \over n_2} \right)}}}
+{t_x} = {{(\bar{x_1} - \bar{x_2}) - (\mu_1 - \mu_2)_{H_0}} \over {\sqrt{s_{p}^2 \left ({1 \over n_1} + {1 \over n_2} \right)}}}
 $$
 
 **Steps**:
