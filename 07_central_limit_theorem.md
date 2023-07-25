@@ -27,7 +27,7 @@ $$
 3. We can express the null hypothesis as: On average, a randomly selected sample of 36 drivers will drive **less than or equal** to 12,500 miles.
 4. Visually, we want to test the probability that the average driving distance for a sample of 36 drivers will fall within the lower tail of the distribution shown below. 
 
-    ![Distribution for a sample of 36 drivers](./images/Screenshot%202023-07-06%20at%2023-25-37%20Chapter%207%20-%20dbs3e_ppt_ch07.pdf.png)
+![Distribution for a sample of 36 drivers](./images/Screenshot%202023-07-06%20at%2023-25-37%20Chapter%207%20-%20dbs3e_ppt_ch07.pdf.png)
 
 
 5. Recall that we can compute the **sample** standard error:
@@ -110,7 +110,7 @@ $$
 P(\tilde{x} > 7.5) = P(z_{\tilde{x}} > 3.49) = 0.0002
 $$
    
-   - As stated above, since we assume the probability could fall on either tail of the distribution, we multiply the value we obtained above by 2: $0.0002 \times 2 = 0.0004$ or $0.4\%$. Since the probability value is far less than $0.05$, we reject the null hypothesis. Therefore, we can conclude that the average customer service rating is most likely different from 7.2 is $0.004$.
+   - As stated above, since we assume the probability could fall on either tail of the distribution, we multiply the value we obtained above by 2: $0.0002 \times 2 = 0.0004$. Since the probability value is far less than $0.05$, we reject the null hypothesis. Therefore, we can conclude that the average customer service rating is most likely different from 7.2 is $0.004$.
 
    - Alternatively, to compute the probability, you can enter the $z$-score into the R function `pnorm()`.
 
@@ -152,8 +152,9 @@ $$
 3. Determine the probability that a sample proportion of $\tilde{p} = 0.808$ or more could be obtained if the true proportion is $p = 0.70$.
 
 $$
-P(\tilde{p} \ge 0.808) = P(z_p \ge 2.81) = 0.0025 \hspace{1mm} or \hspace{1mm} 0.25\%
+P(\tilde{p} \ge 0.808) = P(z_p \ge 2.81) = 0.0025.
 $$
+The probability is 0.0025 or 25%.
 
 **In R**:
 ```r
