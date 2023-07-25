@@ -28,9 +28,7 @@ $$
 H_1: \mu > 50.
 $$
 
-2. Compute the critical sample mean, $`\bar{x}_{\alpha}`$. The critical sample mean, $\bar{x}_{\alpha}$ is the sample mean that marks the boundary of the rejection region. For an illustration, see below.
-
-$$\bar{x}_{\alpha}$$
+2. Compute the critical sample mean, $`\bar{x}_{\alpha}`$. The critical sample mean, $`\bar{x}_{\alpha}`$ is the sample mean that marks the boundary of the rejection region. For an illustration, see below.
 
 ![Compute the critical sample mean](./images/Screenshot%202023-07-12%20at%2001-16-28%20Chapter%209%20-%20dbs3e_ppt_ch09.pdf.png)
 
@@ -53,6 +51,7 @@ $$
 $$
 \beta = P(z \le -1.03) = 0.1515
 $$
+
 **Result**: The probability of Type II error for this study is $0.1515$ or $15.15\%$.
 
 ## Calculating statistical power
